@@ -57,5 +57,23 @@ In this repository, we are focusing on a **regression** problem, where the goal 
 - **Year**: The data was collected in **1980**.
 
 ### Implementation
-The code and full implementation of the model can be found in the [**predict_house_prices_lr.ipynb**](predict_house_prices_lr.ipynb) file in this repository.  
+The code and full implementation of the model can be found in the [**predict_house_prices_lr.ipynb**](predict_house_prices_lr.ipynb) file in this repository.
+
+## Comparison: scikit-learn vs PyTorch
+
+| Feature                          | **scikit-learn**                                      | **PyTorch**                                      |
+|----------------------------------|------------------------------------------------------|-------------------------------------------------|
+| **Primary Use Case**             | Traditional machine learning (ML) models (e.g., linear regression, classification, clustering) | Deep learning, neural networks, custom models   |
+| **Abstraction Level**            | High-level, user-friendly API for quick model building | Low-level, more flexible but requires more code |
+| **Ease of Use**                  | Very easy to use, especially for standard ML tasks    | Steeper learning curve, more flexibility        |
+| **Models Available**             | Linear regression, decision trees, SVMs, KNN, etc.    | Neural networks, deep learning models (CNN, RNN, etc.) |
+| **GPU Support**                  | No GPU support                                       | Full GPU support with CUDA for fast computation |
+| **Data Handling**                | Works well with small to medium-sized datasets       | Works well with large datasets, especially with deep learning |
+| **Training Loop**                | Built-in, simple (e.g., `model.fit()`)                | You need to write the training loop yourself (more control) |
+| **Performance**                   | Optimized for traditional ML tasks, not suited for large-scale deep learning | Highly optimized for training deep learning models |
+| **Flexibility**                  | Less flexible (mostly for standard ML algorithms)    | Very flexible, allows custom models, layers, etc. |
+| **Preprocessing Tools**          | Extensive tools for data preprocessing (scaling, encoding, etc.) | Basic data manipulation; requires custom preprocessing |
+| **Deployment**                   | Easy to deploy for smaller models                    | Designed for production with deep learning models, includes tools like TorchServe |
+| **Integration with Other Libraries** | Integrates well with pandas, NumPy, and matplotlib   | Works well with NumPy, pandas, and other deep learning tools like TensorBoard |
+
 
